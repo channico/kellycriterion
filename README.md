@@ -10,16 +10,16 @@ The **Kelly Criterion** is a mathematical approach to position sizing that seeks
 
 In its simplest form, the Kelly fraction can be expressed as:
 
-\[
+$$
 f^* = \frac{bp-q}{b}
-\]
+$$
 
 where:
 
-- \(f^*\) = optimal fraction of capital to risk
-- \(p\) = probability of winning
-- \(q = 1-p\) = probability of losing
-- \(b\) = net payoff received for each unit risked
+- $f^*$ = optimal fraction of capital to risk
+- $p$ = probability of winning
+- $q = 1-p$ = probability of losing
+- $b$ = net payoff received for each unit risked
 
 Rather than asking only:
 
