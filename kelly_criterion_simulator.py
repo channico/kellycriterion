@@ -10,7 +10,9 @@ from ipywidgets import interact, FloatSlider, IntSlider
 
 # Function to calculate the optimal bet fraction using Kelly Criterion
 def kelly_criterion(win_rate, win_payoff, lose_payoff):
-    return max(0, (win_rate * (win_payoff + 1) - (1 - win_rate)) / (win_payoff + 1 + abs(lose_payoff)))
+    return max(0,
+               (win_rate * win_payoff - (1 - win_rate) * lose_payoff) / (win_payoff * abs(lose_payoff))
+               )
 
 
 # Function to simulate the outcomes of bets and track capital
